@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InspireQuotes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header Section -->
+      <header class="app-header">
+        <img src="logo.png" alt="InspireQuotes Logo" class="app-logo" />
+        <h1 class="app-title">Subh Quote</h1>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Category Selector -->
+        <div class="quote-controls">
+          <label for="category-select" class="category-select-all">Select Category:</label>
+          <select id="category-select">
+            <option value="sports">Sports</option>
+            <option value="movies">Movies</option>
+            <option value="life">Life</option>
+            <option value="religious">Religious</option>
+          </select>
+        </div>
+
+        <!-- Quote Display Section -->
+        <div class="quote-box">
+          <blockquote id="quote-text">
+            "A great quote will appear here!"
+          </blockquote>
+          <p id="quote-author">- Author</p>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+          <button id="btn-prev">Previous</button>
+          <button id="btn-next">Next</button>
+          <button id="btn-random">Random</button>
+        </div>
+
+        <!-- Font Size Controls -->
+        <div class="font-size-controls">
+          <button id="btn-increase-font">A+</button>
+          <button id="btn-decrease-font">A-</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
